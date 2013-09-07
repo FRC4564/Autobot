@@ -1,0 +1,26 @@
+           1         2         3         4         5         6
+  123456789012345678901234567890123456789012345678901234567890
+01+Movement Settings
+02            +fDrive         +fSteer              
+03  FORWARD    xxxxxxxxxxxx    xxxxxxxxxxxx
+04
+05            +tDrive         +tLEFT           +tRIGHT
+06  TURN       xxxxxxxxxxxx    xxxxxxxxxxxx	xxxxxxxxxxxx
+07
+08-
+09+Timing and Distance
+10    +safeTime           +safeDist 
+11     xxxxxxxxxxxx        xxxxxxxxxxxx
+12-                         
+13                                             +Servos-------+
+14                                              +sDrive-----+
+15
+16-                                               
+17+Status                                       +sSteer
+18  Mode xxxx  safeTimer xxx   AutoTimer xxx
+19  Direction xxxxxxxx         PIR Dist  xxx    
+20                                              +sScan 
+21  Message xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+22-
+
+  [ ] Autonomous      < Forward >    < Left >    < Right >
