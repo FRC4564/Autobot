@@ -1,0 +1,58 @@
+<!--Pololu Maestro servo controller settings file, http://www.pololu.com/catalog/product/1350-->
+<UscSettings version="1">
+  <NeverSuspend>false</NeverSuspend>
+  <SerialMode>USB_DUAL_PORT</SerialMode>
+  <FixedBaudRate>9600</FixedBaudRate>
+  <SerialTimeout>0</SerialTimeout>
+  <EnableCrc>false</EnableCrc>
+  <SerialDeviceNumber>12</SerialDeviceNumber>
+  <SerialMiniSscOffset>0</SerialMiniSscOffset>
+  <Channels ServosAvailable="6" ServoPeriod="156">
+    <!--Period = 19.968 ms-->
+    <!--Channel 0-->
+    <Channel name="" mode="Servo" min="3968" max="8000" homemode="Off" home="3968" speed="0" acceleration="0" neutral="3968" range="1905" />
+    <!--Channel 1-->
+    <Channel name="" mode="Servo" min="3968" max="6464" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 2-->
+    <Channel name="" mode="Servo" min="3968" max="6464" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 3-->
+    <Channel name="" mode="Servo" min="3968" max="6464" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 4-->
+    <Channel name="" mode="Servo" min="3968" max="7616" homemode="Off" home="3968" speed="0" acceleration="0" neutral="6000" range="1905" />
+    <!--Channel 5-->
+    <Channel name="" mode="Servo" min="1088" max="9280" homemode="Off" home="1088" speed="0" acceleration="0" neutral="6000" range="1905" />
+  </Channels>
+  <Sequences />
+  <Script ScriptDone="true">sub center
+    12 5 acceleration
+    60 5 speed
+    5100 5 servo
+    quit
+
+sub front
+    12 5 acceleration
+    begin
+        3700 5 servo
+        800 delay
+        6500 5 servo
+        800 delay
+    repeat
+
+sub left
+    12 5 acceleration
+    begin
+        5500 5 servo
+        800 delay
+        8300 5 servo
+        800 delay
+    repeat
+
+sub right
+    12 5 acceleration
+    begin
+        1900 5 servo
+        800 delay
+        4700 5 servo
+        800 delay
+    repeat</Script>
+</UscSettings>
